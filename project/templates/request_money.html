@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+<main class="form-signin w-100 m-auto">
+    <!-- Example Code -->
+<form method = "" action="">
+    {% csrf_token %}
+
+  <h1>Request Money</h1>
+
+  <p>Select a user and specify amount you want to request from them.</p>
+
+  <div class="mb-3">
+    <label for="name" class="form-label">username</label>
+    <input type="text" class="form-control" id="name" name="name"  placeholder="enter the username">
+  </div>
+
+  <div class="mb-3">
+        <label for="Amount" class="form-label">Amount</label>
+        <input type="number" class="form-control" id="Amount" name="Amount"  placeholder="enter the Amount">
+  </div>
+  
+    <div class="mb-3">
+      <button class="btn btn-primary" type="Request money">Request_money</button>
+    </div>
+  </form>
+    
+  <a href="logout" class="link-warning">Logout</a><br>
+    
+  </body>
+</html>
