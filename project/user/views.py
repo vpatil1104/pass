@@ -18,6 +18,7 @@ from .models import *
 #from .filters import OrderFilter
 
 def registerPage(request):
+   
     if request.user.is_authenticated:
         return redirect('login')
     else:
